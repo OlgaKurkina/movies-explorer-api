@@ -1,1 +1,10 @@
-# movies-explorer-api
+# Дипломная работа.
+Дипломная работа представляет собой интерактивную страницу, на которой пользователи могут зарегистрироваться и делиться понравившимися фильмами.
+
+## Ссылки на проект
+
+IP 51.250.94.68;
+
+Frontend https://doktorovao.nomoreparties.sbs - в разработке
+
+Backend https://api.doktorovao.nomoreparties.sbs
