@@ -15,9 +15,9 @@ const { NotFoundError } = require('../utils/errors/errors');
 
 router.post('/signup', registerValidation, createNewUser);
 router.post('/signin', loginValidation, loginUser);
-
-router.use('/users', auth, userRouter);
-router.use('/movies', auth, moviesRouter);
+router.use(auth);
+router.use('/users', userRouter);
+router.use('/movies', moviesRouter);
 router.use('/*', (req, res, next) => next(new NotFoundError('Страница не найдена')));
 
 module.exports = router;
