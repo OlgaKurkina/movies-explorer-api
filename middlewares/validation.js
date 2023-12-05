@@ -29,7 +29,7 @@ const movieIdValidation = celebrate({
   }),
 });
 
-const movieDataValifation = celebrate({
+const movieDataValidation = celebrate({
   body: Joi.object().keys({
     country: Joi.string().required(),
     director: Joi.string().required(),
@@ -50,5 +50,5 @@ module.exports = {
   loginValidation,
   userDataValidation,
   movieIdValidation,
-  movieDataValifation,
+  movieDataValidation,
 };
