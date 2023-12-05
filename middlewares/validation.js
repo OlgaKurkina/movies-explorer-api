@@ -40,8 +40,8 @@ const movieDataValidation = celebrate({
     trailerLink: Joi.string().required().regex(regex),
     thumbnail: Joi.string().required().regex(regex),
     movieId: Joi.number().required(),
-    nameRU: Joi.string().required().min(2).max(50),
-    nameEN: Joi.string().required().min(2).max(50),
+    nameRU: Joi.string().required().min(2).max(60),
+    nameEN: Joi.string().required().min(2).max(60),
   }),
 });
 
